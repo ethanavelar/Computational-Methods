@@ -1,0 +1,10 @@
+The Laplace equation is a second degree elliptic partial differential equation. In this exercise, the version of the laplace equation includes the second partial derivative with respect to x and y.
+
+Process:
+
+The first step of the process is to discretize the partial differential equations. In our case there are two spatial variable so it is necessary to discretize the PDE in both the x and y direction.
+This can be done by using a Taylor series and truncating it at the appropriate derivative.
+
+After the discretization of the PDE is completed you can then use this algebraic expression to approximate the solution to the PDE.
+
+In order to drive the error as close to zero as possible it is nessesary to use gauss-seidel set to a low tolerance. As can be seen in the output the gauss-seidel method converges with a tolerance of 1.0e-9 on the 15th iteration.
